@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+
+
+--color-red-400: hsl(7, 99%, 70%);
+--color-yellow-500: hsl(51, 100%, 49%);
+--color-green-800:  hsl(167, 40%, 24%);   /*(graphic design text):*/
+--color-blue-800: hsl(198, 62%, 26%);    /*(photography text): */
+--color-green-500:  hsl(167, 34%, 41%); /*(footer):*/
+
+
+
+--color-grey-950: hsl(212, 27%, 19%);
+--color-grey-600: hsl(213, 9%, 39%);
+--color-grey-550: hsl(232, 10%, 55%);
+--color-grey-400: hsl(210, 4%, 67%);
+--color-white: hsl(0, 100%, 100%);
+
+
+--ff-primary: "Fraunces", serif;
+--ff-secundary: "Barlow", sans-serif;
+}
+ 
+/*--------------------- HEADER ------------------*/
+
+.header{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+}
+
+.header__nav{
+    opacity: 0;
+    visibility:hidden;
+    max-height: 0;
+}
+
+.header .container-wrapper{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin: 0 auto;
+    
+}
+
+.header__btn-menu{
+    background-color: transparent;
+    border: none;
+}
+/*-------------- HERO ----------------*/
+
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/mobile/image-header.jpg');
+    background-position: center  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.hero .container-wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 45px;   
+}
+
+.hero__title h1{
+    text-align: center;
+    color: var(--color-white);
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: var(--ff-primary);
+    font-size: 900;
+    letter-spacing: 5px;
+    
+}
+
+.img-arrow{
+    width: auto;
+    height: 150px;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+}
+
+@keyframes bajarFlecha{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+.img-arrow{
+    animation: bajarFlecha 3s ease-in-out infinite;
+}
+
+/*------------ ABOUT ----------------*/
+
+.about{
+    width: 100%;
+    
+}
+
+.about__wrapper{
+    width: 100%;
+    
+}
+
+
+
+.about__container{
+    width: 100%;
+    min-height: 100vh;
+    
+
+    
+    
+}
+
+.about__img-container{
+    width: 100%;
+}
+
+.about__img-container img{
+    width: 100%;
+   
+}
+
+.about__brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 500px;
+    
+    
+}
+
+.about__container-brand{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.about__container-brand h2{
+    font-family: var(--ff-primary);
+    font-size: 40px;
+    color: var(--color-grey-950);
+}
+
+.about__container-brand p{
+    font-family: var(--ff-secundary);
+    font-size: 18px;
+    color: var(--color-grey-550);
+}
+
+.about__container-brand a{
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.about__container-brand a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 8px;
+    background-color: var(--color-yellow-500);
+    border-radius: 100px;
+    z-index: -1;
+
+}
+    /*--------- SERVICE ---------------------*/
+
+.service{
+    width: 100%;
+
+}    
+
+.service__container{
+    width: 100%;
+    min-height: 75vh;
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+.service__container-design{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service__container-design h2{
+    font-family: var(--ff-primary);
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--color-green-800);
+    margin-bottom: 30px;
+}
+
+    
+.service__container-design p{
+    font-family: var(--ff-secundary);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-green-800);
+}
+
+
+.service__container:nth-of-type(2){
+    background-image: url('../images/mobile/image-photography.jpg');
+}
+
+.service__container-design--photografy h2,
+.service__container-design--photografy p{
+
+    color: var(--color-blue-800);
+
+}
+
+    
+
+
+
+    
