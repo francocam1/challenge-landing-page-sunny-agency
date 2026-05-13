@@ -26,28 +26,28 @@
       <nav class="header__nav">
         <ul>
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="">Services</a>
+            <a href="#service">Services</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#testimonial">Projects</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="https://www.github.com/francocam1" target="_blank">Contact</a>
           </li>
         </ul>
       </nav>
 
-      <button class="header__btn-menu">
-        <img src="images/icon-hamburger.svg" alt="">
+      <button class="header__btn-menu" >
+        <img src="images/icon-hamburger.svg" alt="" id="btn-menu-close">
       </button>
 
     </div>
     
   </header>
-
+  <div id="overlay" class="overlay"></div>
 <main>
   
     <section class="hero">
@@ -59,7 +59,7 @@
         </div>
 
         <div class="hero__bg-img">
-          <img class="img-arrow" src="images/icon-arrow-down.svg" alt="">
+          <a href="#about"><img class="img-arrow" src="images/icon-arrow-down.svg" alt=""></a>
           
         </div>
 
@@ -67,7 +67,7 @@
 
     </section>
   
-    <section class="about">
+    <section class="about" id="about">
 
       <div class="about-wrapper">
 
@@ -114,7 +114,7 @@
       
      </section>
 
-    <section class="service">
+    <section class="service" id="service">
 
     <div class="service__container">
       <div class="service__container-design">
@@ -133,36 +133,35 @@
 
     </section>
 
-    <section class="testimonial">
+    <section class="testimonial" id="testimonial">
 
-      Client testimonials
-
-      <div class="testimonial__client">
-        <img src="images/image-emily.jpg" alt="">
-        <p>
-          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-        </p>
-          <h4>Emily R.</h4>
-        <p>Marketing Director</p>
-      </div>
-
-      <div class="testimonial__client">
-        <img src="images/image-thomas.jpg" alt="">
-        <p>
-          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-        </p>
-        <h4>Thomas S.</h4>
-        <p>Chief Operating Officer</p>
+      <div class="testimonial__wrapper">
+        <h3>Client testimonials</h3>
+        <div class="testimonial__client">
+          <img src="images/image-emily.jpg" alt="">
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+            <h4>Emily R.</h4>
+          <p>Marketing Director</p>
+        </div>
+        <div class="testimonial__client">
+          <img src="images/image-thomas.jpg" alt="">
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h4>Thomas S.</h4>
+          <p>Chief Operating Officer</p>
         
-      </div>
-
-      <div class="testimonial__client">
-        <img src="images/image-jennie.jpg" alt="">
-        <p>
-          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-        </p>
-          <h4>Jennie F.</h4>
-        <p>Business Owner</p>
+        </div>
+        <div class="testimonial__client">
+          <img src="images/image-jennie.jpg" alt="">
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+            <h4>Jennie F.</h4>
+          <p>Business Owner</p>
+        </div>
       </div>
 
     </section>
@@ -178,37 +177,44 @@
    
 </main>
 
- <footer>
-      <div class="footer__logo-container">
-        <img src="images/logo.svg" alt="">
-      </div>
-      <nav class="footer__nav">
-        <div>
+ <footer class="footer" id="footer">
+
+      <div class="footer__wrapper">
+
+        <div class="footer__logo-container">
           <img src="images/logo.svg" alt="">
         </div>
-        <ul>
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">Services</a>
-          </li>
-          <li>
-            <a href="">Projects</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer__branding">
-        <img src="images/icon-facebook.svg" alt="">
-        <img src="images/icon-instagram.svg" alt="">
-        <img src="images/icon-twitter.svg" alt="">
-        <img src="images/icon-pinterest.svg" alt="">
+
+        <nav class="footer__nav">
+          
+          <ul>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#service">Services</a>
+            </li>
+            <li>
+              <a href="#about">Projects</a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        <div class="footer__branding">
+          <a href="https://www.github.com/francocam1" target="_blank" rel="noopener noreferrer" 
+   aria-label="Visitar mi perfil de GitHub"><img src="images/icon-facebook.svg" alt=""></a>
+          <a href="https://www.github.com/francocam1" target="_blank" rel="noopener noreferrer" 
+   aria-label="Visitar mi perfil de GitHub"><img src="images/icon-instagram.svg" alt=""></a>
+          <a href="https://www.github.com/francocam1" target="_blank" rel="noopener noreferrer" 
+   aria-label="Visitar mi perfil de GitHub"><img src="images/icon-twitter.svg" alt=""></a>
+          <a href="https://www.github.com/francocam1" target="_blank" rel="noopener noreferrer" 
+   aria-label="Visitar mi perfil de GitHub"><img src="images/icon-pinterest.svg" alt=""></a>
+        </div>
       </div>
+
     </footer>
 
- 
+ <script src="scripts.js"></script>
 </body>
 </html>
