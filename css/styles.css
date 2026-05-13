@@ -50,6 +50,7 @@ html{
     position: relative;
 }
 
+
 .header__nav--active{
     opacity: 1;
     visibility: visible;
@@ -140,11 +141,13 @@ html{
 .header__btn-menu{
     background-color: transparent;
     border: none;
-
-
-
-
+    
 }
+
+
+
+
+
 /*-------------- HERO ----------------*/
 
 
@@ -349,7 +352,7 @@ html{
 
     
 
-/*----------- SERVICE ----------------*/
+/*----------- TESTIMONIAL ----------------*/
 
 .testimonial{
     width: 100%;
@@ -409,6 +412,9 @@ html{
     color: var(--color-grey-400);
     font-size: 16px;
 }
+
+
+/* ------------------ GALLERY -------------*/
 
 .gallery{
     width: 100%;
@@ -490,3 +496,384 @@ html{
     gap: 30px;
     padding: 30px 0;
 }
+
+
+/* ------------------------- DESKTOP LAYOUT------------------*/
+
+
+/*-------------------- HEADER -----------------*/
+@media (min-width: 1024px) {
+
+
+
+
+    .header{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    z-index: 20;
+    background-color: #3EBFFF;
+}
+
+.header__btn-menu{
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0;
+    display: none;
+}
+
+.header__logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo-container img{
+    height: 40px;
+}
+
+
+
+
+.header__nav{
+    opacity: 1;
+    visibility:visible;
+    max-height: none;
+    position: relative;
+    
+    
+}
+
+.header__nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.header__nav ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    font-family: var(--ff-secundary);
+    color: var(--color-white);
+}
+.header__nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.header__nav ul li:nth-child(4) a{
+    font-family: var(--ff-primary);
+    font-weight: 900;
+    font-size: 19px;
+    padding: 18px 35px;
+    background-color: var(--color-white);
+    border-radius: 100px;
+    text-transform: uppercase;
+    color: var(--color-grey-950);
+}
+
+.header__nav ul li:nth-child(4):hover a{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--color-white);
+}
+
+
+.header .container-wrapper{
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin: 0 auto;
+    
+    
+}
+
+/*------------------ HERO --------------------------------*/
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/desktop/image-header.jpg');
+    background-position: center  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.hero .container-wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 55px;   
+}
+
+/*-------------------ABOUT ---------------------*/
+
+.about{
+    width: 100%;
+    
+}
+
+.about__wrapper{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.about__container{
+    width: 100%;
+    max-width: 1200px;
+    min-height: auto;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 500px;
+    margin: 0 auto;
+    max-height: 500px;
+    padding: 0;
+}
+
+.about__img-container{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+    
+.about__brand{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.about__container:nth-of-type(2) .about__img-container{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+    
+    
+
+.about__img-container{
+    width: 100%;
+}
+
+.about__img-container img{
+    width: 100%;
+   
+}
+
+.about__brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 500px;
+    text-align: left;
+    
+}
+
+.about__container-brand{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding:40px;
+    text-align: left;
+}
+
+.about__container-brand h2{
+    font-family: var(--ff-primary);
+    font-size: 40px;
+    color: var(--color-grey-950);
+    text-align: left;
+    width: 400px;
+    align-self: flex-start;
+}
+
+.about__container-brand p{
+    font-family: var(--ff-secundary);
+    font-size: 18px;
+    color: var(--color-grey-550);
+}
+
+.about__container-brand a{
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    align-self: flex-start;
+    margin-left: 8px;
+}
+
+.about__container-brand a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 8px;
+    background-color: var(--color-yellow-500);
+    border-radius: 100px;
+    z-index: -1;
+
+}
+
+/*-------------------- SERVICE -------------------*/
+
+.service{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+.service__container{
+    
+    width: 600px;
+    min-height: auto;
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+    height:500px;
+}
+
+.service__container-design{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    
+.service__container-design p{
+    font-size: 18px;
+    width: 400px;
+}
+
+
+.service__container:nth-of-type(2){
+    background-image: url('../images/desktop/image-photography.jpg');
+}
+
+.service__container-design--photografy p{
+    width: 400px;
+    
+}
+
+/*--------------  TESTIMONIAL --------------*/
+
+
+.testimonial{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.testimonial__wrapper{
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: auto auto auto;
+    gap: 40px;
+    margin: 0 auto;
+    
+}
+
+    
+
+.testimonial__wrapper h3{
+    grid-column: 1/4;
+    grid-row: 1/4;
+    font-size: 28px;
+}
+
+.testimonial__client {
+    gap: 50px;
+}
+
+/*-------------- GALLERY ----------- */
+
+.gallery{
+    width: 100%;
+}
+ 
+
+.gallery__container{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto auto auto auto;
+    margin: 0 auto;
+
+}
+
+.gallery__container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__container img:nth-of-type(1){
+    content: url('../images/desktop/image-gallery-milkbottles.jpg');
+ }
+
+ .gallery__container img:nth-of-type(2){
+    content: url('../images/desktop/image-gallery-orange.jpg');
+ }
+ .gallery__container img:nth-of-type(3){
+    content: url('../images/desktop/image-gallery-cone.jpg');
+ }
+ .gallery__container img:nth-of-type(4){
+    content: url('../images/desktop/image-gallery-sugarcubes.jpg');
+ }
+
+/*------------ FOOTER ----------------*/
+
+
+
+.footer__wrapper{
+    width: 600PX;
+   
+    
+}
+
+
+.footer__nav{
+    width: 60%;
+
+}
+
+
+    
+.footer__nav ul li a:hover{
+   color: var(--color-white);
+}
+    
+.footer__branding a,
+.footer__branding a img:hover{
+    transition: all 0.4s ease-in-out;
+}
+.footer__branding a:hover img{
+    transform: scale(1.4);
+    filter: brightness(0) invert(1) ;
+}
+
+
+ }
